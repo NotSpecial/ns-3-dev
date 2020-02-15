@@ -5,12 +5,12 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get install -y \
     # Base requirements
-    git gcc g++ python3 \ 
+    git gcc g++ python3 python3-pip \ 
     # Additional features
     libboost-all-dev libxml2-dev libgsl-dev \
     libgcrypt-dev libgtk-3-dev python3-dev \
-    # Debugging
-    gdb valgrind \
+    # Debugging and Formatting
+    gdb valgrind clang-format \
     # Statistics framework
     sqlite sqlite3 libsqlite3-dev \
     # Packet inspection
