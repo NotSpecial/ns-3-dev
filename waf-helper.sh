@@ -5,5 +5,5 @@
 
 CWD="$PWD"
 cd /ns3 >/dev/null
-./waf --cwd="$CWD" $*
+./waf --cwd="$CWD" "$@"
 cd - >/dev/null
